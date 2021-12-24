@@ -6,6 +6,28 @@ Created on Thu Dec 23 22:56:46 2021
 """
 
 def unscramble (scramble, dictionary, alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"):
+    '''
+    Parameters
+    ----------
+    scramble : string
+        Word that needs to be unscrambled.
+    dictionary : string
+        Path to dictionary.
+    alphabet : string, optional
+        Alphabet that is used to create any word in the dictionary. 
+        The default is "ABCDEFGHIJKLMNOPQRSTUVWXYZ".
+
+    Raises
+    ------
+    ValueError
+        Is raised when the inputs are not of type string.
+
+    Returns
+    -------
+    lines_filtered : TYPE
+        List of unscrambled words found in the dictionary.
+
+    '''
     # check input variables
     if type(scramble) != str:
         raise ValueError('scramble must be of type str')
