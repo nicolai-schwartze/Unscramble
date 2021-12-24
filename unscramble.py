@@ -55,11 +55,13 @@ def unscramble (scramble, dictionary, alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"):
             for s in scramble:
                 if s not in lupper:
                     s_in = False
+                    break
             
             ns_not_in = True
             for ns in notscramble:
                 if ns in lupper:
                     ns_not_in = False
+                    break
                     
             if (s_in and ns_not_in):
                 lines_filtered.append(l)
