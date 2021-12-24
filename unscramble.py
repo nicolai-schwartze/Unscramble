@@ -24,7 +24,7 @@ def unscramble (scramble, dictionary, alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"):
 
     Returns
     -------
-    lines_filtered : TYPE
+    lines_filtered : list
         List of unscrambled words found in the dictionary.
 
     '''
